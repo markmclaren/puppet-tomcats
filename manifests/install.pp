@@ -112,6 +112,9 @@ define tomcats::install (
     amd64 : {
       $pkg_wrapper = "wrapper-linux-x86-64-${wrapper_release}"
     }
+    x86_64 : {
+      $pkg_wrapper = "wrapper-linux-x86-64-${wrapper_release}"
+    }
   }
 
   ###############################
