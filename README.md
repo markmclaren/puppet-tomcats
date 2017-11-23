@@ -23,7 +23,7 @@ You can use the optional/additional variable "tomcat_description => 'livesystem'
 #### Linux
 Usage in site.pp, two Tomcat instances with possible options, e.g.
 ```puppet
-   tomcats::windows::install { '01':
+   tomcats::install { '01':
       tomcat_number => '01',
       tomcat_release => '8.0.24',
       wrapper_release => '3.5.21',
@@ -32,7 +32,7 @@ Usage in site.pp, two Tomcat instances with possible options, e.g.
       download_wrapper_from => 'http://wrapper.tanukisoftware.com/download',
    }
 
-   tomcats::windows::install { '02':
+   tomcats::install { '02':
       tomcat_number => '02',
       tomcat_release => '7.0.54',
       wrapper_release => '3.5.21',
