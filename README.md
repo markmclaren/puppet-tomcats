@@ -28,8 +28,8 @@ Usage in site.pp, two Tomcat instances with possible options, e.g.
       tomcat_release => '8.0.24',
       wrapper_release => '3.5.21',
       java_home => '/usr/lib/jvm/jdk-8-oracle-x64',
-      download_tomcat_from => 'http://archive.apache.org',
-      download_wrapper_from => 'http://wrapper.tanukisoftware.com/download',
+      download_url_tomcat => 'http://archive.apache.org/dist/tomcat/tomcat-8/v8.0.24/bin/apache-tomcat-8.0.24.tar.gz',
+      download_url_wrapper => 'https://download.tanukisoftware.com/wrapper/3.5.21/wrapper-linux-x86-64-3.5.21.tar.gz',
    }
 
    tomcats::install { '02':
@@ -37,8 +37,8 @@ Usage in site.pp, two Tomcat instances with possible options, e.g.
       tomcat_release => '7.0.54',
       wrapper_release => '3.5.21',
       java_home => '/usr/lib/jvm/jdk-7-oracle-x64',
-      download_tomcat_from => 'http://archive.apache.org',
-      download_wrapper_from => 'http://wrapper.tanukisoftware.com/download',
+      download_url_tomcat => 'http://archive.apache.org/dist/tomcat/tomcat-7/v7.0.54/bin/apache-tomcat-7.0.54.tar.gz',
+      download_url_wrapper => 'https://download.tanukisoftware.com/wrapper/3.5.21/wrapper-linux-x86-64-3.5.21.tar.gz',
    }
 ```
 Usage in your ENC like Foreman
